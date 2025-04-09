@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Marquinho Bebidas</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        .quem-somos-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .historia-section {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .historia-section h2 {
+            color: #0066cc;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .historia-section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .galeria-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .galeria-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .galeria-item:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .historia-section {
+                padding: 1.5rem;
+            }
+
+            .galeria {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo/logo.png" alt="Logo Marquinho Bebidas" class="logo">
+                <h1>Marquinho Bebidas</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="menu-item-cardapio">
+                        <a href="#">Cardápio</a>
+                        <ul class="submenu">
+                            <li><a href="produtos/fardos.html">Fardos</a></li>
+                            <li><a href="produtos/combos.html">Combo de Drinks</a></li>
+                            <li><a href="produtos/unidade.html">Cervejas Unidades</a></li>
+                            <li><a href="produtos/longneck.html">Long Neck</a></li>
+                            <li><a href="produtos/tabacaria.html">Tabacaria</a></li>
+                            <li><a href="produtos/carvao.html">Carvão</a></li>
+                            <li><a href="produtos/litrinhos.html">Litrinhos</a></li>
+                            <li><a href="produtos/bebidas.html">Bebidas</a></li>
+                            <li><a href="produtos/salgadinhos.html">Salgadinhos</a></li>
+                            <li><a href="produtos/gelo.html">Gelos</a></li>
+                            <li><a href="produtos/vinhos.html">Vinhos</a></li>
+                            <li><a href="produtos/whisky.html">Whisky</a></li>
+                            <li><a href="produtos/vodka.html">Vodka</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="quem-somos-container">
+        <section class="historia-section">
+            <h2>Nossa História</h2>
+            <p>A Adega Marquinho Bebidas é uma referência em Itaí quando o assunto é qualidade e variedade em bebidas. Estabelecida na cidade, nossa história é marcada pelo compromisso com a excelência no atendimento e a satisfação dos nossos clientes.</p>
+            <p>Oferecemos uma ampla seleção de bebidas, desde cervejas nacionais e importadas até os mais refinados whiskies e vinhos. Nossa adega também disponibiliza uma variedade de produtos complementares como gelo, carvão e salgadinhos, tornando-nos o destino ideal para todas as suas celebrações.</p>
+            <p>Com um ambiente acolhedor e uma equipe altamente capacitada, nos orgulhamos em proporcionar a melhor experiência de compra, sempre com preços competitivos e produtos de qualidade superior.</p>
+
+            <div class="galeria">
+                <div class="galeria-item">
+                    <img src="imagem/ilustre/copao.webp" alt="Fardos de Cerveja">
+                </div>
+                <div class="galeria-item">
+                    <img src="imagem/ilustre/cerveja-ambev-.jpg" alt="Whisky Premium">
+                </div>
+                <div class="galeria-item">
+                    <img src="imagem/ilustre/Whisky.png" alt="Vinhos Selecionados">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2024 Marquinho Bebidas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
